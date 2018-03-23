@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<meta name="author" content="Fernando Ramos Miracle">
+<title>Mitsubishi Test</title>
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<link rel="icon" type="image/gif" href="images/bt_favicon.gif" sizes="16x16">
+<link rel="stylesheet" type="text/css" href="styles/general.css">
+<link rel="stylesheet" type="text/css" href="styles/animation.css">
+<script src="scripts/jquery-3.2.1.min.js"></script>
+<script src="scripts/peticionAJAX.js"></script>
+<script src="scripts/dynamicLayout.js"></script>
+<script src="scripts/tabSubEnter.js"></script>
+</head>
+
+<body>
+
+<div class="flex-container">
+
+<!-- Masthead of the web page. -->
+<header>
+  <img src="images/BarTender 2016.png" height="100">
+  <h1>Env&iacute;o de Petici&oacute;n de Servicio a la Plataforma de Integraci&oacute;n</h1>
+</header>
+
+<!-- Contains data entry form and message area. -->
+<aside class="aside">
+ <h2>Entrada de Datos:</h2>
+ <div class="form" id="frmFormulario">
+  Documento:<br>
+  <select id="frmDocumento">
+   <option value="01Pequena.btw">Peque&#241;o</option>
+   <option value="02Mediana.btw">Mediano</option>
+   <option value="03Grande.btw">Grande</option>
+  </select><br>
+  N&#250;mero de copias:<br>
+  <input id="frmCantidad" type="number" value ="1"><br>
+  Geometr&#237;a:<br>
+  <input type="text" id="geometria" autofocus autocomplete="off" value=""><br>
+  Calidad:<br>
+  <input type="text" id="calidad" autocomplete="off" value=""><br>
+  Lote:<br>
+  <input type="text" id="lote" autocomplete="off" value=""><br>
+  <button id="btnPrint" type="button">Imprimir</button>
+ </div>
+ <div class="message">
+    <p id="printMessage">Sin mensajes...</p>
+  </div>
+</aside>
+
+<!-- Contains the footer information. -->
+<footer>
+  <p>
+    Seagull Scientific Europe, Inc. | Paseo de la Castellana, 18, 5° A | 28046 Madrid | Spain
+  </p>
+  <p>copyright &copy; www.seagullscientific.com</p>
+</footer>
+
+</div>
+
+</body>
+
+</html>
